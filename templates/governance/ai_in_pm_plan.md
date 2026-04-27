@@ -45,7 +45,7 @@
 
 | Tool | Vendor | Use Case | Data Classification Allowed | Approval Date |
 |---|---|---|---|---|
-| Claude (claude.ai / API) | Anthropic | LLM tasks, drafting, analysis | Internal, no PII | [Date] |
+| [LLM Tool — e.g. enterprise AI] | [Vendor] | LLM tasks, drafting, analysis | Internal, no PII | [Date] |
 | [GitHub Copilot] | Microsoft | Code generation | Public + internal code | [Date] |
 | [Project AI tool] | [Vendor] | [Specific PM task] | [Classification] | [Date] |
 

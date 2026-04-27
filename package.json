@@ -1,0 +1,42 @@
+{
+  "name": "@amitvalecha7/claude-pm-skill",
+  "version": "1.0.0",
+  "description": "PM Pro — AI Project Manager skill for Claude Code, grounded in PMBOK 6, 7 & 8 (by Amit Valecha)",
+  "author": "Amit Valecha <amitvalecha7@github>",
+  "license": "MIT",
+  "homepage": "https://github.com/amitvalecha7/claude_PM#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amitvalecha7/claude_PM.git"
+  },
+  "keywords": [
+    "claude-code",
+    "claude-skill",
+    "project-management",
+    "pmbok",
+    "pmp",
+    "pm",
+    "ai-pm",
+    "wbs",
+    "risk-register",
+    "project-charter"
+  ],
+  "bin": {
+    "install-pm-skill": "./bin/install-pm-skill.js"
+  },
+  "scripts": {
+    "install-global": "node bin/install-pm-skill.js --global",
+    "install-project": "node bin/install-pm-skill.js --project",
+    "uninstall": "node bin/install-pm-skill.js --uninstall"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    ".claude/commands/pm.md",
+    "templates/",
+    "policies/",
+    "README.md"
+  ]
+}
