@@ -1,6 +1,6 @@
 # Claude PM Skill — Project Manager AI Assistant
 
-This repository contains a Claude Code skill that acts as a full-spectrum AI Project Manager, grounded in **PMBOK (all editions)**, including the process-based PMBOK 6th Edition and the principle-based PMBOK 7th Edition.
+This repository contains a Claude Code skill that acts as a full-spectrum AI Project Manager, grounded in **PMBOK (all editions)**, with **PMBOK 8th Edition (Nov 2025 / Jan 2026)** as the primary current standard, plus the principle-based PMBOK 7th Edition and the process-based PMBOK 6th Edition for legacy and exam contexts.
 
 ## What This Skill Does
 
@@ -18,11 +18,12 @@ When invoked via `/pm`, Claude assumes the role of an expert Project Manager and
 ```
 .claude/commands/pm.md          # The PM skill (slash command)
 templates/
-  initiation/                   # Project Charter, Stakeholder Register, etc.
-  planning/                     # WBS, Schedule, Risk Register, Communication Plan, etc.
-  executing/                    # Meeting Minutes, Status Reports, Change Requests, etc.
-  monitoring/                   # Performance Reports, Issue Log, Variance Analysis, etc.
-  closing/                      # Lessons Learned, Final Report, Closure Certificate, etc.
+  initiation/                   # Project Charter, Stakeholder Register, Business Case, Assumptions Log
+  planning/                     # WBS, Schedule, Budget, Risk Register, Comm Plan, RACI, Quality, Resource, Stakeholder, Procurement
+  executing/                    # Status Reports, Meeting Minutes, Change Requests, Action Items, Issue Log
+  monitoring/                   # Performance Reports (EVM), Variance Analysis, Risk Monitoring, Change Log
+  closing/                      # Lessons Learned, Final Report, Closure Certificate, Handover Checklist
+  governance/                   # PMBOK 8: Governance Framework, Sustainability Plan, AI in PM Plan, Ethics & Responsible Tech
 policies/
   change_control.md             # Change control policy
   escalation.md                 # Escalation policy
@@ -32,7 +33,24 @@ policies/
 
 ## PMBOK Coverage
 
-### PMBOK 6th Edition — 5 Process Groups × 10 Knowledge Areas
+### PMBOK 8th Edition (PRIMARY — released Nov 2025 / Jan 2026)
+**6 Principles:** Holistic View · Focus on Value · Embed Quality · Accountable Leadership · Integrated Sustainability · Empowered Culture
+
+**7 Performance Domains:** Governance · Stakeholders · Scope · Schedule · **Finance** *(new)* · Resources · Risk
+
+**5 Focus Areas (replacing Process Groups):** Initiating · Planning · Executing · Monitoring & Controlling · Closing
+
+**40 non-prescriptive processes** organized by performance domain, with new dedicated coverage of:
+- AI in Project Management
+- Sustainable Project Delivery (ESG / Triple Bottom Line)
+- Ethical Technology Use
+- Customer-Focused PMO
+- Modern Procurement Practices
+
+### PMBOK 7th Edition — 12 Principles (Legacy Reference)
+Stewardship · Team · Stakeholders · Value · Systems Thinking · Leadership · Tailoring · Quality · Complexity · Risk · Adaptability · Change
+
+### PMBOK 6th Edition — 5 Process Groups × 10 Knowledge Areas (Legacy Reference)
 | Knowledge Area | Initiating | Planning | Executing | M&C | Closing |
 |---|---|---|---|---|---|
 | Integration | Project Charter | Project Mgmt Plan | Direct & Manage Work | Monitor & Control | Close Project |
@@ -45,9 +63,6 @@ policies/
 | Risk | — | Risk Plan / Register | Implement Risk Resp. | Monitor Risks | — |
 | Procurement | — | Procurement Plan | Conduct Procurements | Control Proc. | Close Proc. |
 | Stakeholder | Identify Stakeholders | Stakeholder Eng. Plan | Manage Engagement | Monitor Eng. | — |
-
-### PMBOK 7th Edition — 12 Principles
-Stewardship · Team · Stakeholders · Value · Systems Thinking · Leadership · Tailoring · Quality · Complexity · Risk · Adaptability · Change
 
 ## Invoke
 
